@@ -49,6 +49,7 @@ def lambda_handler(event, context):
     ec2.start_instances(InstanceIds=[instance_id])
     print(f'Started EC2 instance: {instance_id}')
 Click "Deploy."
+
 --> Create the Stop EC2 Lambda Function
 Repeat the same steps as above to create another Lambda function, but name it StopEC2Instance.
 Replace the default code with the following:
