@@ -7,7 +7,7 @@ Table of contents
 # Step 2: Create Lambda Functions
 # Step 3: Create CloudWatch Events Rules
 
- **Steps to Set Up the Project**
+ <! -- -->**Steps to Set Up the Project**
 Create IAM Role for Lambda
 Create Lambda Functions
 Create CloudWatch Events Rules
