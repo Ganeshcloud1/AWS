@@ -1,0 +1,74 @@
+**********Creating a customised ami by automatic processing using AWS image builder*********
+Objective: The primary goal of this project is to automate the creation and management of Amazon Machine Images (AMIs) using AWS Image Builder. This ensures that the AMIs are consistently configured, up-to-date, and meet specific requirements for deployment.
+
+
+
+Key Points:
+
+Automation: Utilize AWS Image Builder to automate the process of creating AMIs.
+
+Schedule regular updates to ensure the AMIs are always current.
+
+
+
+Customization: Define custom image recipes that include specific software packages, configurations, and scripts.
+
+Tailor the AMIs to meet the unique needs of your applications and environments.
+
+Efficiency: Reduce manual intervention and potential errors by automating the image creation process.
+
+  - Streamline the deployment process by using pre-configured and tested AMIs.
+
+Consistency: Ensure all instances launched from the AMIs have a consistent configuration.
+
+ - Maintain version control of AMIs to track changes and updates over time.
+
+Security:Incorporate security best practices into the image recipes.
+
+ - Regularly update AMIs to include the latest security patches and updates.
+
+
+
+Scalability:Easily scale the creation and distribution of AMIs across multiple regions and accounts.
+
+Use AWS Image Builder to manage large-scale deployments efficiently.
+
+
+
+------Steps involved-------
+
+Step 1: Set Up AWS Image Builder
+
+---->Open AWS Management Console: Navigate to the AWS Management Console and select the Image Builder service.
+
+---->Create Image Pipeline: Click on “Create Image Pipeline” to start the process.
+
+---> Build sechdule type "manual"
+
+Step 2: Define Your Image Recipe
+
+Choose a Base Image: Select an existing AMI as your base image.
+
+-->Add Components: Add the necessary components to your image recipe. You can use pre-built components from AWS or create custom ones. Components can include software packages, configurations, and scripts.
+
+Step 3 : Go to AMI create role for EC2 service.
+
+Add permissions for image builder 
+
+Step 4: Create an Image Pipeline
+
+Pipeline Settings: Define the pipeline settings, including the name, description, and schedule for image creation.
+
+
+
+Step 4: Build and Test the Image
+
+Build Image: AWS Image Builder will automatically build the image based on your recipe and pipeline settings.
+
+
+
+Test Image: Once the build is complete, test the image to ensure it meets your requirements. You can launch an instance using the new AMI and verify its functionality.
+
+Step 5: Distribute the Image
+
+Share AMI: After testing, you can distribute the AMI to different regions or share it with other AWS accounts.
